@@ -1,0 +1,182 @@
+body{
+  padding-top: 150px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 150px;
+  background-color: royalblue;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.leftSide-header{
+position: absolute;
+left: 10px;
+top: 15px;
+align-items: center;
+}
+.leftSide-header img{
+  width: 80px;
+  border-radius: 40px;
+ 
+}
+.rightSide-header{
+ position: absolute;
+  right: 20px;
+  top: 40px;
+
+}
+.rightSide-header h3{
+  display: inline-block;
+  margin-left: 15px;
+
+}
+/*cv part*/
+.section1{
+  width: 70%;
+  background-color: rgb(58, 58, 172);
+  color: white;
+  border-radius: 10px;
+  margin-left: 170px;
+  padding: 25px;
+  text-align: justify;
+}
+.myCv-header{
+  margin-left: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  margin-top: 10px;
+}
+table td, li{
+  font-size: small;
+}
+.portfolio-display{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/*section 2*/
+.section2{
+  background-color: whitesmoke;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+.portfo{
+  text-align: justify;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: rgb(241, 236, 236);
+}
+.portfo a{
+  color: black;
+  font-weight: bold;
+}
+.section2 img{
+width: 189px;
+padding: 15px;
+}
+.section2 div{
+  margin: 15px;
+ 
+}
+.section3{
+  margin-top: 20px;
+  background-color: rgb(58, 58, 172);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  
+  
+}
+.gallary-display{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 10px;
+row-gap: 10px;
+}
+.gallary-display img{
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* mobile view */
+@media(max-width: 750px){
+  body{
+    width: fit-content;
+    padding-top: 110px;
+    margin: 10px;
+    font-size: 16px;
+    object-fit: cover;
+  }
+  header{
+    
+    position: fixed;
+    font-size: 14px;
+    height: 100px;
+    background-color: royalblue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightSide-header{
+    position: absolute;
+     right: 10px;
+     top: 10px;
+   
+   }
+   .rightSide-header h3{
+     display: block;
+     
+   
+   }
+  .section1{
+    margin-left: 25px;
+  }
+  .myCv-header h1{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .prof-sm{
+    font-size: 17px;
+
+  }
+  .leftSide-header img{
+    width: 30px;
+    border-radius: 15px;
+  }
+  .rightSide-header{
+    position: absolute;
+     right: 20px;
+     top: 40px;
+   
+   }
+   .rightSide-header h3{
+     display: inline-block;
+     margin-left: 15px;
+   
+   }
+   .gallary-display{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    
+    }
+    .portfolio-display{
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 8px;
+      }
+}
